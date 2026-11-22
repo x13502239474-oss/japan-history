@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#FBFAF6">
+<title>日本史读本 · 从列岛的黎明到失去的几十年</title>
+<meta name="description" content="一部以托特曼《日本史》为主线，参照升味准之辅《日本政治史》与道尔《拥抱战败》的个人日本史数字读物。">
+<link rel="stylesheet" href="assets/css/base.css">
+</head>
+<body>
+<div id="site-header"></div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero__eyebrow">个人历史读物　·　全七篇九十章　·　持续撰写中</div>
+    <div class="hero__grid">
+      <div>
+        <h1>日本史<span class="thin">读本</span></h1>
+        <p class="hero__lede" id="heroLede"></p>
+      </div>
+      <aside class="hero__aside">
+        <h3>本书体例</h3>
+        <p>以康拉德·托特曼《日本史》（第二版）建立通史骨架；以升味准之辅《日本政治史》补足权力结构与政党史；以约翰·W·道尔《拥抱战败》细写一九四五年之后。</p>
+        <div class="stats" id="heroStats"></div>
+        <p style="margin-top:12px"><a href="catalog.html" style="border-bottom:1px solid var(--accent-line);color:var(--accent)">查看完整目录 →</a></p>
+      </aside>
+    </div>
+    <div id="resumeSlot"></div>
+  </div>
+</header>
+
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="section__head">
+      <span class="kicker">Chronology</span>
+      <h2>时间轴</h2>
+      <span class="count">自旧石器时代至泡沫经济</span>
+    </div>
+    <div class="timeline" id="timeline"></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section__head">
+      <span class="kicker">Structure</span>
+      <h2>全书七篇</h2>
+      <span class="count" id="partCount"></span>
+    </div>
+    <div class="parts" id="parts"></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section__head">
+      <span class="kicker">Index</span>
+      <h2>索引与专题</h2>
+      <span class="count">按人物、事件、地理与主题进入</span>
+    </div>
+    <div class="entries" id="entries"></div>
+  </div>
+</section>
+
+<section class="section section--tight" id="recentSection" hidden>
+  <div class="wrap">
+    <div class="section__head">
+      <span class="kicker">Recent</span>
+      <h2>最近阅读</h2>
+      <span class="count">仅保存在本机浏览器</span>
+    </div>
+    <div id="recent"></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section__head">
+      <span class="kicker">Editorial Note</span>
+      <h2>编辑说明</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:32px;max-width:1000px">
+      <div>
+        <h3 style="font-family:var(--serif);font-size:16px;margin:0 0 8px">关于三本书的分工</h3>
+        <p style="font-size:14px;line-height:1.95;color:var(--ink-3);margin:0">
+          通史的时间框架、社会经济与生态脉络取托特曼；制度细节、政党与官僚的运作取升味；战败与占领部分的叙事密度取道尔。
+          三本书不是三个栏目，而是同一条叙述的不同层次——每一章都可能在同一个段落里同时用到三者的判断。
+        </p>
+      </div>
+      <div>
+        <h3 style="font-family:var(--serif);font-size:16px;margin:0 0 8px">关于史料与争议</h3>
+        <p style="font-size:14px;line-height:1.95;color:var(--ink-3);margin:0">
+          古代部分依据《魏志倭人传》《宋书》等正史与出土材料；近代部分依据公文、回忆与既有研究。
+          凡学界仍有分歧者（如邪马台国的位置、大化改新的性质），以「争点」形式并列主要观点，不代替读者下结论。
+        </p>
+      </div>
+      <div>
+        <h3 style="font-family:var(--serif);font-size:16px;margin:0 0 8px">关于写作原则</h3>
+        <p style="font-size:14px;line-height:1.95;color:var(--ink-3);margin:0">
+          叙述优先于结论，过程优先于要点。涉及日本对中国的侵略，按史实完整呈现，不作淡化；
+          同时避免以民族情绪替代对决策机制的分析——理解它如何发生，比谴责它更重要。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+
+<script src="assets/js/core.js"></script>
+<script src="data/site.js"></script>
+<script src="data/people.js"></script>
+<script src="data/events.js"></script>
+<script src="assets/js/home.js"></script>
+</body>
+</html>
