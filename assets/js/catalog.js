@@ -10,8 +10,11 @@
   }, 0);
 
   document.getElementById("tocIntro").textContent =
-    "全书七篇共 " + total + " 章，已完成 " + done + " 章正文，其余章节按计划逐篇撰写。" +
-    "已完成章节可直接进入阅读；未完成者标注「待撰写」，不设空页面。";
+    done === total
+      ? "全书七篇共 " + total + " 章，正文已全部完成。可按顺序通读，也可从任一时期切入；" +
+        "每章附本章主要依据、关联人物与事件，页末有上一章与下一章跳转。"
+      : "全书七篇共 " + total + " 章，已完成 " + done + " 章正文，其余章节按计划逐篇撰写。" +
+        "已完成章节可直接进入阅读；未完成者标注「待撰写」，不设空页面。";
 
   document.getElementById("tocBody").innerHTML = JH.site.parts.map(function (p) {
     var ready = p.chapters.filter(function (c) { return c.ready; }).length;

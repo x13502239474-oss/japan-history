@@ -10,8 +10,8 @@
   var eras = ["古代", "中世", "近世", "近代", "现代"];
 
   document.getElementById("pageIntro").textContent = isPeople
-    ? "共 " + data.length + " 位。人物条目只收录在当前已完成章节中实际出现、并具有叙述作用者；每条注明所属章节，便于回到正文阅读上下文。"
-    : "共 " + data.length + " 条。事件按时间排序，注明年代与关联章节。凡学界对年代或性质有争议者，在条目中简要说明。";
+    ? "共 " + data.length + " 位，按时代分组。每条注明身份、生卒与所属章节，可直接回到正文阅读上下文；人物名在正文首次出现处亦有链接。"
+    : "共 " + data.length + " 条，按时代分组。每条注明年代与关联章节；凡学界对年代、性质或规模有争议者，在条目中如实说明不同立场。";
 
   var body = document.getElementById("indexBody");
   var html = "";
